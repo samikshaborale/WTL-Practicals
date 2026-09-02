@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h2>Simple Addition</h2>
+
+    Number 1: <input type="number" id="num1"><br><br>
+    Number 2: <input type="number" id="num2"><br><br>
+    
+    <button onclick="add()">Calculate Sum</button>
+    <button onclick="add()">Calculate Sub</button>
+    <button onclick="add()">Calculate multi</button>
+    <button onclick="add()">Calculate division</button>
+    <button onclick="add()">Calculate modulo</button>
+
+    <script>
+        function add() {
+            // Getting values from input fields
+            var a = parseInt(document.getElementById("num1").value);
+            var b = parseInt(document.getElementById("num2").value);
+            
+            // Adding both numbers
+            var sum = a + b;
+	    var sub = a-b;
+	    var mult = a*b;
+	    var devision = a/b;
+	    var modulo = a%b;
+            
+            // Displaying the output using document.write()
+            <br>document.write("The sum is: " + sum);<br>
+	    document.write("The sub is: " + sub);
+	    document.write("The multiplication is: " + mult);
+	    document.write("The division is: " + devision);
+            document.write("The modulo operation is: " + modulo);
+	    
+        }
+    </script>
+
+</body>
+</html>
